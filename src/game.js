@@ -276,7 +276,6 @@ class MinesweeperGame {
     }
 }
 
-// Inicialización
 document.addEventListener('DOMContentLoaded', () => {
     const game = new MinesweeperGame({
         boardElem: document.getElementById('board'),
@@ -292,7 +291,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('startBtn').addEventListener('click', () => game.createBoard());
 
-    // Tema claro/oscuro
     const themeBtn = document.getElementById('themeBtn');
     const themeIcon = document.getElementById('themeIcon');
 
@@ -304,7 +302,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => { document.body.style.transition = ''; }, 600);
     }
 
-    // Inicializar tema al cargar
     const savedTheme = localStorage.getItem('minesweeperTheme');
     if (savedTheme === 'dark') setTheme(true);
 
