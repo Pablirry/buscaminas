@@ -1,12 +1,12 @@
-# Buscaminas PRO
+# Buscaminas
 
-Buscaminas PRO es una versión moderna y profesional del clásico juego de Buscaminas, con ranking, animaciones, modo claro/oscuro, ayuda interactiva y una interfaz inspirada en Microsoft.
+Buscaminas es una versión moderna y profesional del clásico juego de Buscaminas, con ranking, animaciones, modo claro/oscuro, ayuda interactiva y una interfaz inspirada en Microsoft.
 
 ---
 
 ## Índice
 
-- [Buscaminas PRO](#buscaminas-pro)
+- [Buscaminas](#buscaminas)
   - [Índice](#índice)
   - [Características](#características)
   - [Instalación](#instalación)
