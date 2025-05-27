@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscaminas PRO</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="theme-toggle">
+            <button id="themeBtn" class="btn-theme" title="Cambiar tema">
+                <span id="themeIcon">🌙</span> Tema
+            </button>
+        </div>
+        <div class="help-link">
+            <a href="src/help.html" class="btn-secondary" title="Ayuda">❓ Ayuda</a>
+        </div>
+        <header>
+            <h1><span class="ms-logo"></span> Buscaminas</h1>
+            <p class="subtitle">Completa con el nivel adaptado a lo que desees sin explotar ninguna bomba</p>
+        </header>
+        <div class="controls">
+            <label>
+                Filas:
+                <input type="number" id="rows" min="5" max="20" value="9">
+            </label>
+            <label>
+                Columnas:
+                <input type="number" id="cols" min="5" max="20" value="9">
+            </label>
+            <label>
+                Minas:
+                <input type="number" id="mines" min="5" max="99" value="10">
+            </label>
+            <button id="startBtn" class="btn-primary">Nuevo Juego</button>
+        </div>
+        <div class="status-bar">
+            <span class="status-item">⏱️ <span id="timer">0</span>s</span>
+            <span class="status-item">🚩 <span id="flagsLeft">0</span></span>
+        </div>
+        <div id="board" class="board"></div>
+        <div id="message" class="message"></div>
+        <div id="victory-animation" class="victory-animation"></div>
+        <div class="ranking-section">
+            <h2>🏆 Ranking de Mejores Tiempos</h2>
+            <table id="rankingTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Tiempo (s)</th>
+                        <th>Filas</th>
+                        <th>Columnas</th>
+                        <th>Minas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ranking dinámico -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>Buscaminas &copy; 2025 &mdash; Creado por <a href="https://github.com/Pablirry" target="_blank">Pablirry</a></p>
+    </footer>
+    <script src="src/game.js"></script>
+</body>
+</html>
